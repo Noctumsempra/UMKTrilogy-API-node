@@ -1,0 +1,11 @@
+extends @/layout
+
+block content
+  h1= title
+  hr
+  if tasks.length > 0
+    ul
+      each task in tasks
+        li= task.description
+  else
+    i='No characters found.'
